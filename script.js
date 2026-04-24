@@ -78,19 +78,31 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// ── Experience dim on hover ──
-const items = document.querySelectorAll('.tl-item');
-items.forEach(item => {
-  item.addEventListener('mouseenter', () => {
-    items.forEach(o => { if (o !== item) o.style.opacity = '.4'; });
+// ── Experience dim on hover (re-runs after each render) ──
+function initExperienceDim() {
+  const items = document.querySelectorAll('.tl-item');
+  items.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      items.forEach(o => o.classList.toggle('dimmed', o !== item));
+    });
+    item.addEventListener('mouseleave', () => {
+      items.forEach(o => o.classList.remove('dimmed'));
+    });
   });
-  item.addEventListener('mouseleave', () => {
-    items.forEach(o => o.style.opacity = '1');
-  });
-});
+}
 
 // ── 下載履歷 → 列印成 PDF ──
 document.querySelector('.cta').addEventListener('click', e => {
   e.preventDefault();
   window.print();
 });
+
+// ── initInteractions：每次 renderAll() 後重新掛載 ──
+function initInteractions() {
+  initExperienceDim();
+  // CTA print button (重新掛載避免重複)
+  const cta = document.querySelector('.cta');
+  if (cta) {
+    cta.onclick = e => { e.preventDefault(); window.print(); };
+  }
+}

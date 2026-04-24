@@ -240,11 +240,31 @@ a{color:inherit;text-decoration:none;}
   content:'';position:absolute;left:0;top:4px;bottom:0;
   width:1px;background:var(--border);
 }
-.tl-item{position:relative;margin-bottom:2.5rem;}
+
+/* 每個項目預設可點擊感 */
+.tl-item{
+  position:relative;margin-bottom:2rem;
+  padding:1rem 1rem 1rem 0;
+  border:1px solid transparent;
+  border-radius:var(--radius);
+  transition:border-color .25s var(--ease), opacity .25s var(--ease);
+  cursor:default;
+}
 .tl-item:last-child{margin-bottom:0;}
 
+/* hover：細邊框 + 字體稍大 */
+.tl-item:hover{
+  border-color:var(--border);
+  background:rgba(45,212,191,.03);
+}
+.tl-item:hover .tl-title{ font-size:1rem; }
+.tl-item:hover .tl-desc { font-size:.9rem; }
+
+/* 其他項目變淡（由 JS 控制，這裡提供 class） */
+.tl-item.dimmed{ opacity:.35; }
+
 .tl-dot{
-  position:absolute;left:-1.5rem;top:4px;
+  position:absolute;left:-1.5rem;top:1.25rem;
   width:9px;height:9px;border-radius:50%;
   border:1.5px solid var(--text);background:var(--bg);
   transform:translateX(calc(-50% + .5px));
@@ -252,16 +272,24 @@ a{color:inherit;text-decoration:none;}
 }
 .tl-item:hover .tl-dot{border-color:var(--accent);background:var(--accent);}
 
-/* 日期使用 time 標籤，樣式與原 .tl-period 相同 */
+/* 日期使用 time 標籤 */
 .tl-period,
 time.tl-period{
   font-size:.7rem;font-weight:700;text-transform:uppercase;
   letter-spacing:.08em;color:var(--text);margin-bottom:.35rem;
-  display:block;
+  display:block;transition:color .2s;
 }
-.tl-title{font-size:.95rem;font-weight:500;color:var(--heading);margin-bottom:.35rem;}
+.tl-item:hover time.tl-period{ color:var(--accent); }
+
+.tl-title{
+  font-size:.95rem;font-weight:500;color:var(--heading);margin-bottom:.35rem;
+  transition:font-size .2s var(--ease);
+}
 .tl-company{color:var(--accent);font-weight:600;}
-.tl-desc{font-size:.875rem;color:var(--text);line-height:1.65;margin-bottom:.75rem;}
+.tl-desc{
+  font-size:.875rem;color:var(--text);line-height:1.65;margin-bottom:.75rem;
+  transition:font-size .2s var(--ease);
+}
 .tl-highlight{
   background:var(--accent2);border:1px solid var(--border);
   border-radius:var(--radius);padding:1rem 1.1rem;

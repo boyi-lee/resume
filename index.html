@@ -210,10 +210,11 @@ function renderAll() {
     </div>
   `).join('');
 
-  // ── Footer ──
+  // ── Footer：顯示固定標籤 Mail / Phone / Line / Download ──
+  const footerLabels = { email: 'Mail', phone: 'Phone', link: 'Line' };
   document.getElementById('footerLinks').innerHTML =
-    d.contact.map(c => `<a href="${c.href}" class="footer-link">${c.label}</a>`).join('') +
-    `<a href="#" class="footer-link" onclick="window.print();return false;">${t('下載履歷', 'Download')}</a>`;
+    d.contact.map(c => `<a href="${c.href}" class="footer-link"${c.type==='link'?' target="_blank" rel="noopener"':''}>${footerLabels[c.type]||c.label}</a>`).join('') +
+    `<a href="#" class="footer-link" onclick="window.print();return false;">Download</a>`;
   document.getElementById('footerCopy').textContent =
     `© ${new Date().getFullYear()} ${d.profile.nameZh}`;
 

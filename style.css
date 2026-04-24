@@ -211,28 +211,44 @@ a{color:inherit;text-decoration:none;}
 .about-text p{margin-bottom:1.25rem;}
 .about-text p:last-child{margin-bottom:0;}
 
-/* ── Numbers — compact inline ── */
+/* ── Numbers — horizontal 4-column strip ── */
 .numbers-strip{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:0;border:1px solid var(--border);border-radius:var(--radius);
-  overflow:hidden;margin-top:1.25rem;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:0;
+  margin-top:1.5rem;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+@media(max-width:640px){
+  .numbers-strip{ grid-template-columns:repeat(2,1fr); }
 }
 .num-cell{
-  padding:1rem 1.25rem;position:relative;
+  padding:1.5rem 1.25rem 1.25rem;
+  position:relative;
+  border-right:1px solid var(--border);
   transition:background .2s;
 }
-.num-cell:hover{background:var(--accent2);}
-.num-cell:nth-child(1),.num-cell:nth-child(2){border-bottom:1px solid var(--border);}
-.num-cell:nth-child(odd){border-right:1px solid var(--border);}
-.num-val{font-size:1.25rem;font-weight:700;color:var(--accent);line-height:1.1;margin-bottom:.2rem;font-variant-numeric:tabular-nums;}
-.num-label{font-size:.78rem;color:var(--text);}
-
-/* chart bar (visual) */
+.num-cell:last-child{ border-right:none; }
+.num-cell:hover{ background:rgba(45,212,191,.04); }
+.num-val{
+  font-size:1.6rem;font-weight:800;
+  color:var(--heading);
+  line-height:1;margin-bottom:.5rem;
+  font-variant-numeric:tabular-nums;
+  letter-spacing:-.02em;
+}
+.num-label{
+  font-size:.72rem;color:var(--text);
+  line-height:1.4;
+}
+/* accent 頂線，對齊數字寬度 */
 .num-bar{
-  position:absolute;bottom:0;left:0;height:2px;background:var(--accent);opacity:.4;
+  position:absolute;top:0;left:1.25rem;
+  height:2px;background:var(--accent);opacity:.7;
   transition:opacity .2s;
 }
-.num-cell:hover .num-bar{opacity:.8;}
+.num-cell:hover .num-bar{ opacity:1; }
 
 /* ── Timeline / Experience ── */
 .timeline{position:relative;padding-left:1.5rem;}

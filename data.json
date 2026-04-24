@@ -1,25 +1,25 @@
 {
   "meta": {
-    "titleZh": "李柏億 Boyi Li — 數位行銷總監",
-    "titleEn": "Boyi Li — Digital Marketing Director",
-    "descriptionZh": "10年橫跨電商行銷、AdTech產品與數據整合的複合型主管。",
-    "descriptionEn": "10 years across e-commerce marketing, AdTech products and data integration."
+    "titleZh": "李柏億 Boyi Lee — 數位行銷",
+    "titleEn": "Boyi Lee — Digital Marketing",
+    "descriptionZh": "10年數位行銷經歷橫跨成效型電商行銷、MarTech與數據整合。",
+    "descriptionEn": "10 years of experience in digital marketing, spanning performance e-commerce, MarTech, and data integration"
   },
   "profile": {
-    "nameZh": "李柏億 Boyi",
-    "nameEn": "Boyi Li",
+    "nameZh": "李柏億",
+    "nameEn": "Boyi Lee",
     "titleZh": "數位行銷",
     "titleEn": "Digital Marketing",
-    "taglineZh": "市場洞察分析到營收成長的決策與執行",
-    "taglineEn": "From market insight analysis to revenue growth — decision-making and execution.",
+    "taglineZh": "市場洞察分析到營收成長",
+    "taglineEn": "Driving Revenue Growth through Market Insights",
     "photo": "photo.webp",
     "photoFallback": "photo.jpg"
   },
   "contact": [
     {
       "type": "email",
-      "label": "boyi.li@example.com",
-      "href": "mailto:boyi.li@example.com"
+      "label": "belijesus0428@gmail.com",
+      "href": "mailto:belijesus0428@gmail.com"
     },
     {
       "type": "phone",
@@ -34,53 +34,37 @@
   ],
   "about": {
     "paragraphsZh": [
-      "10 年橫跨電商行銷、參與與協作 MarTech 產品與數據整合。擅長從市場洞察反推商品策略，曾協助電商月營收從 1800 萬成長至 5000 萬；也能以 PM 角色推動 AI 推薦引擎與數據資產商品化。",
-      "行銷決策有數據支撐，讓數據產品有市場落地。我做的不是行銷優化，而是發現市場缺口、反推商品策略、帶動整體營收的全鏈路操盤。"
+      "10 年橫跨電商行銷、參與與協作 MarTech 產品與數據整合。擅長從市場洞察反推商品策略，曾協助電商月營收從 1800 萬成長至 5000 萬；也能以 PM 角色推動SaaS疊代與數據資產商品化",
+      "行銷決策有數據支撐，讓數據產品有市場落地。做的不只是數位行銷，更喜歡觀察與發現市場缺口、反推商品策略、帶動整體營收的全通路操盤。"
     ],
     "paragraphsEn": [
-      "10 years across e-commerce marketing, MarTech product collaboration and data integration. Skilled at reverse-engineering product strategy from market insight — helped scale monthly revenue from NT$18M to NT$50M; drove AI recommendation engine adoption as a PM.",
-      "I make marketing data-driven and data products market-ready. What I do isn't campaign optimization — it's identifying market gaps, back-engineering product strategy, and driving full-funnel revenue growth."
+      "10 year veteran spanning E-commerce, MarTech, and data integration. Expert in reverse-engineering product strategies from market insights, with a proven track record of scaling monthly revenue from NT$18M to NT$50M. Experienced in driving SaaS iterations and data asset commercialization in a PM capacity",
+      "I drive marketing decisions with data and bridge the gap between data products and market implementation. Beyond digital marketing, I specialize in identifying market gaps, reverse-engineering product strategies, and orchestrating omni-channel operations to drive holistic revenue growth"
     ]
   },
   "numbers": [
     {
-      "value": "2.7倍",
-      "target": 2.7,
-      "suffix": "倍",
-      "label1Zh": "電商月營收成長",
-      "label1En": "Monthly Revenue Growth",
-      "label2Zh": "1500萬 → 5000萬",
-      "label2En": "NT$15M → NT$50M",
+      "value": "1800萬→5000萬",
+      "labelZh": "電商月營收成長",
+      "labelEn": "Monthly Revenue Growth",
       "barWidth": 100
     },
     {
       "value": "5x",
-      "target": 5,
-      "suffix": "x",
-      "label1Zh": "廣告 ROAS 提升",
-      "label1En": "ROAS Improvement",
-      "label2Zh": "",
-      "label2En": "",
+      "labelZh": "廣告 ROAS 提升",
+      "labelEn": "ROAS Improvement",
       "barWidth": 80
     },
     {
-      "value": "1.4倍",
-      "target": 1.4,
-      "suffix": "倍",
-      "label1Zh": "自然搜尋流量成長",
-      "label1En": "Organic Traffic Growth",
-      "label2Zh": "",
-      "label2En": "",
+      "value": "+140%",
+      "labelZh": "自然搜尋流量成長",
+      "labelEn": "Organic Traffic Growth",
       "barWidth": 70
     },
     {
-      "value": "2.3倍",
-      "target": 2.3,
-      "suffix": "倍",
-      "label1Zh": "網站轉換率",
-      "label1En": "Conversion Rate",
-      "label2Zh": "2% → 4.6%",
-      "label2En": "2% → 4.6%",
+      "value": "2% → 4.6%",
+      "labelZh": "網站轉換率優化",
+      "labelEn": "Conversion Rate Lift",
       "barWidth": 60
     }
   ],
@@ -93,8 +77,8 @@
       "companyEn": "Hantec",
       "roleZh": "行銷顧問",
       "roleEn": "Marketing Consultant",
-      "descZh": "規劃 YouTube 與社群內容行銷，提升品牌信任度與名單收集。建立以 LINE OA 為核心的流量池，整合社群觸點與再行銷策略。帶領 1 行銷企劃＋2 剪輯師，製作投顧內容並提升轉換率。",
-      "descEn": "Planned YouTube and social content marketing to build brand trust and grow lead lists. Built a LINE OA-centered traffic pool integrating social touchpoints and retargeting. Led 1 marketing planner and 2 video editors to produce financial advisory content and improve CVR.",
+      "descZh": "- 規劃 YouTube 與跨平台社群內容策略，建立品牌權威感並優化潛在客戶（Lead Gen）獲取流程。\n\n- 建構以 LINE 官方帳號為核心的流量池，整合多渠道觸點數據實施精準再行銷，提升用戶黏性。\n\n- 從零到一組建跨職能創意團隊（行銷企劃與影音剪輯），主導投顧影音內容產製，成功提升產品轉化率。",
+      "descEn": "- Spearheaded YouTube and social media marketing strategies to strengthen brand authority and optimize high-quality lead generation funnels.\n\n- Engineered a LINE OA-centric private traffic ecosystem, integrating cross-platform touchpoints with automated retargeting to maximize retention.\n\n- Established a cross-functional creative team from the ground up, overseeing end-to-end production of investment content to drive measurable conversion growth.",
       "highlight": null,
       "featured": false
     },
@@ -106,8 +90,8 @@
       "companyEn": "AviviD",
       "roleZh": "廣告技術優化經理",
       "roleEn": "Ad Tech Optimization Manager",
-      "descZh": "整合四維數據（媒體標籤/零售/發票/電信）應用於 BI 戰略報表與受眾設定。帶領 5 人部門管理月投放額 500 萬元。",
-      "descEn": "Integrated four-dimensional data (media tag / retail / invoice / telecom) for BI strategic reports and audience targeting. Led a 5-person team managing NT$5M in monthly ad spend.",
+      "descZh": "- 主導 SaaS 數據平台的功能開發藍圖 (Roadmap)，整合多元數據模組以優化數據處理精度，大幅提升產品在複雜場景下的分析準確度。\n\n- 領導 BI 報表系統開發，為國際 4A 廣告代理商提供客製化數據視覺化方案與深度洞察，直接驅動其投放策略優化與績效達成。\n\n- 帶領 5 人專案團隊（包含業務開發與廣告投手），負責每月約 500 萬台幣之廣告投放預算分配，確保達成高標準的客戶投資報酬率 (ROI)。\n\n- 建立「投放實務 → 數據反饋 → 產品疊代」的閉環系統，將市場第一線投放數據轉化為產品優化建議，顯著強化廣告工具的市場競爭力與商業價值。",
+      "descEn": "- Spearheaded the feature roadmap for a SaaS data platform, integrating multi-source data modules to enhance platform precision and analytical capabilities for complex datasets.\n\n- Led the development of Business Intelligence (BI) dashboards tailored for 4A advertising agencies, providing actionable insights that directly optimized large-scale media buying strategies.\n\n- Managed a cross-functional team of 5 (Account Executives and Media Buyers), overseeing a monthly advertising spend of NT$5M while maintaining peak campaign performance and client ROI.\n\n- Established a \"Delivery-Data-Iteration\" closed-loop system, effectively translating frontline media buying data into product enhancement strategies to maximize the commercial utility of ad-tech tools.",
       "highlight": null,
       "featured": false
     },
@@ -119,8 +103,8 @@
       "companyEn": "Reddoor",
       "roleZh": "成效型顧問",
       "roleEn": "Performance Consultant",
-      "descZh": "規劃 B2C 數位行銷策略。建立 GA4 事件追蹤與 GSC 分析，轉換率由 2% 提升至 3.4%，廣告流量提升約 30%。",
-      "descEn": "Architected B2C digital marketing strategy. Built GA4 event tracking and GSC analysis — CVR lifted from 2% to 3.4%, paid traffic up ~30%.",
+      "descZh": "- 擔任數位行銷代營運顧問，為 B2C 企業量身打造全方位數位行銷策略，並主導高成效廣告投放操作。\n\n- 負責 GA4 事件追蹤架構與 Google Search Console (GSC) 數據分析，精準判讀使用者行為，成功將網站轉換率 (CVR) 由 2% 提升至 3.4%。\n\n- 參與客戶端 客戶數據平台 (CDP) 的規劃與數據整合，透過精準分眾強化會員互動深度與自動化再行銷效率。\n\n- 執行後帶動廣告流量穩定提升 30%，並有效放大會員生命週期價值 (LTV)，優化整體獲客成本。",
+      "descEn": "- Acted as a Digital Operations Consultant to develop comprehensive B2C digital marketing strategies and execute high-performance ad campaigns.\n\n- Implemented GA4 event tracking and Google Search Console (GSC) analysis to optimize user journeys, successfully boosting conversion rates (CVR) from 2% to 3.4%.\n\n- Contributed to Customer Data Platform (CDP) planning and integration, enhancing membership engagement and retargeting efficiency through data-driven segmentation.\n\n- Achieved a 30% increase in ad traffic and significantly amplified Member Lifetime Value (LTV) by optimizing cross-channel conversion funnels.",
       "highlight": null,
       "featured": false
     },
@@ -132,8 +116,8 @@
       "companyEn": "Up Media",
       "roleZh": "SEO 顧問",
       "roleEn": "SEO Consultant",
-      "descZh": "優化網站架構與內容策略，目標關鍵字推進至 Google 首頁。執行半年內自然流量提升達 140%。",
-      "descEn": "Optimized site architecture and content strategy — target keywords reached Google page 1. Organic traffic grew 140% within 6 months.",
+      "descZh": "- 策劃並執行網站架構優化與內容行銷策略，精準鎖定高價值商業關鍵字，成功將多項核心時事詞彙推升至 Google 搜尋結果首頁 。\n\n- 運用 Google Analytics3 與 Google Search Console進行深度數據剖析，針對搜尋意圖與用戶行為定期疊代 SEO。\n\n- 透過系統化的關鍵字佈局與技術面 SEO 調整，於執行半年內達成自然流量 140% 的增長。",
+      "descEn": "- Optimized website architecture and content marketing strategies to elevate high-value commercial keywords to the first page of Google SERP.\n\n- Leveraged Google Analytics and GSC for in-depth data analysis, implementing iterative SEO adjustments based on user search intent and behavioral trends.\n\n- Achieved a 140% growth in organic traffic within a six-month period through systematic keyword mapping and technical SEO enhancements.",
       "highlight": null,
       "featured": false
     },
@@ -145,8 +129,8 @@
       "companyEn": "AviviD",
       "roleZh": "行銷經理",
       "roleEn": "Marketing Manager",
-      "descZh": "帶領商品推薦引擎迭代，應用於新聞媒體 & 電商產業。憑藉電商實戰經驗橋接工程與業務，推動 AI 產品落地。",
-      "descEn": "Led product recommendation engine iteration for news media and e-commerce. Bridged engineering and business using firsthand e-commerce experience to drive AI product adoption.",
+      "descZh": "- 規劃 AI 商品推薦引擎，透過深度客戶訪談與市場研究定義產品需求，並有效推動產品功能的持續疊代與優化。\n\n- 策劃品牌行銷與廣告投放專案，在極大化品牌市場能見度的同時，確保潛在客戶 (Lead) 轉換流程的精準度與效率。\n\n- 負責品牌公關與媒體關係管理，透過撰寫專業新聞稿與維繫媒體渠道，成功擴大品牌曝光量並爭取高品質媒體報導。",
+      "descEn": "- Conceptualized and led the development of an AI-powered product recommendation engine, conducting in-depth customer interviews to identify pain points and drive product iterations.\n\n- Orchestrated brand advertising campaigns to amplify market presence while optimizing the efficiency of lead generation and conversion funnels.\n\n- Managed public relations (PR) and media strategy, including press release distribution and relationship management, to secure extensive earned media coverage and brand exposure.",
       "highlight": null,
       "featured": false
     },
@@ -158,13 +142,13 @@
       "companyEn": "i3fresh",
       "roleZh": "行銷經理",
       "roleEn": "Marketing Manager",
-      "descZh": "負責官網行銷策略與優化專案，月營收從 1800 萬成長至 5000 萬。帶領 10 人團隊規劃跨渠道廣告投放，ROAS 提升至 5 倍。",
-      "descEn": "Owned site marketing strategy and optimization projects. Monthly revenue grew from NT$18M to NT$50M. Led a 10-person team across multi-channel ad campaigns — ROAS improved 5×.",
+      "descZh": "- 負責官網行銷成長策略與優化專案，成功驅動月營收由 NT$1,800 萬規模化增長至 NT$5,000 萬。\n\n- 帶領 10 人跨職能團隊執行多渠道廣告投放策略 (Facebook / Google)，透過精準投放與數據優化將整體 ROAS 提升至 5 以上。\n\n- 建立會員分群與精準再行銷體系，有效提升顧客回購率與會員生命週期價值。\n\n- 統籌大型促銷活動與內容行銷矩陣，強化品牌市場佔有率與社群影響力，確立品牌市場領導地位。",
+      "descEn": "- Spearheaded official website growth and optimization initiatives, successfully scaling monthly revenue from NT$18M to NT$50M.\n\n- Led a 10-member cross-functional team in executing multi-channel performance marketing (FB/Google), optimizing ad spend to achieve a ROAS exceeding 5x.\n\n- Established sophisticated customer segmentation and retargeting frameworks, significantly boosting customer retention rates and Lifetime Value (LTV).\n\n- Orchestrated integrated promotional campaigns and content strategies to strengthen brand positioning and expand market share.",
       "highlight": {
-        "labelZh": "核心決策故事：",
+        "labelZh": "核心決策：",
         "labelEn": "Decision story:",
-        "textZh": "透過數據發現運動族群對生鮮食品的潛在需求缺口，將行銷資源投入雞胸肉、藜麥毛豆、花椰菜米等產品，並執行素人減重挑戰活動，成就 1800萬→5000萬 的營收成長。",
-        "textEn": "Identified a latent demand gap among fitness consumers for fresh food via data. Redirected marketing resources to chicken breast, quinoa edamame, and cauliflower rice — and ran an amateur weight-loss challenge campaign that drove 1800萬→5000萬 revenue growth."
+        "textZh": "- 透過數據分析洞察運動族群對生鮮食品的潛在需求缺口，據此精準調整商品策略，將行銷資源集中投入 DGI (低 GI) 飲食產品。\n\n\n\n- 策劃並執行「素人減重挑戰」社群活動，藉由真實見證建立品牌公信力，成功實現月營收從 1,800 萬至 5,000 萬 的規模化成長。",
+        "textEn": "- Identified a latent market gap for fresh food among the fitness demographic through data analytics, strategically reallocating marketing resources to prioritize DGI (Low-Glycemic Index) product lines.\n\n- Orchestrated a \"Real-life Weight Loss Challenge\" campaign to build brand social proof and authority, successfully scaling monthly revenue from NT$18M to NT$50M."
       },
       "featured": true
     },
@@ -202,8 +186,7 @@
       "tags": [
         "Meta Ads",
         "Google Ads",
-        "LINE Ads",
-        "廣告策略"
+        "LINE Ads"
       ]
     },
     {
@@ -235,7 +218,8 @@
         "跨部門協作",
         "團隊管理",
         "產品規劃",
-        "策略思維"
+        "策略思維",
+        "廣告決策"
       ]
     }
   ],

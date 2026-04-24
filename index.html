@@ -177,11 +177,13 @@ function renderAll() {
   document.getElementById('numbersHead').textContent = t('關鍵數字', 'Numbers');
   document.getElementById('numbersStrip').innerHTML = d.numbers.map(n => `
     <div class="num-cell">
-      <div class="num-val">${n.value}</div>
-      <div class="num-label">${t(n.labelZh, n.labelEn)}</div>
+      <div class="num-val" data-target="${n.target}" data-suffix="${n.suffix||''}">${n.value}</div>
+      <div class="num-label1">${t(n.label1Zh, n.label1En)}</div>
+      ${(n.label2Zh||n.label2En) ? `<div class="num-label2">${t(n.label2Zh||'', n.label2En||'')}</div>` : ''}
       <div class="num-bar" style="width:${n.barWidth}%"></div>
     </div>
   `).join('');
+  runCounters();
 
   // ── Experience ──
   document.getElementById('expHead').textContent = t('工作經歷', 'Experience');
@@ -192,7 +194,13 @@ function renderAll() {
       <div class="tl-title">
         <span class="tl-company">${t(e.companyZh, e.companyEn)}</span> · ${t(e.roleZh, e.roleEn)}
       </div>
-      <p class="tl-desc">${t(e.descZh, e.descEn)}</p>
+      <ul class="tl-desc-list">${
+        t(e.descZh, e.descEn)
+          .split(/\s*[-－]\s+/)
+          .filter(s => s.trim())
+          .map(s => `<li>${s.trim()}</li>`)
+          .join('')
+      }</ul>
       ${e.highlight ? `
         <div class="tl-highlight">
           <strong>${t(e.highlight.labelZh, e.highlight.labelEn)}</strong>
@@ -220,6 +228,26 @@ function renderAll() {
 
   // 重新掛載互動事件
   initInteractions();
+}
+
+// ── 數字跑動動畫 ──
+function runCounters() {
+  document.querySelectorAll('.num-val[data-target]').forEach(el => {
+    const target = parseFloat(el.dataset.target);
+    const suffix = el.dataset.suffix || '';
+    if (isNaN(target)) return;
+    const isFloat = !Number.isInteger(target);
+    const duration = 1200;
+    const start = performance.now();
+    function step(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - progress, 3);
+      const val = target * ease;
+      el.textContent = (isFloat ? val.toFixed(1) : Math.round(val)) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  });
 }
 
 // 覆寫 script.js 的 toggleLang，改由這裡驅動

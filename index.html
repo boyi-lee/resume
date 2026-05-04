@@ -223,25 +223,19 @@ a{color:inherit;text-decoration:none;}
 .about-text p{margin-bottom:1.25rem;}
 .about-text p:last-child{margin-bottom:0;}
 
-/* ── Numbers — Enhanced design ── */
+/* ── Numbers — Option A: 2-col grid, arrow cards span full width ── */
 .numbers-strip{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:1fr 1fr;
   gap:1rem;
   margin:2rem 0;
   padding:0;
   border:none;
 }
-@media(max-width:768px){
-  .numbers-strip{ 
-    grid-template-columns:repeat(2,1fr); 
-    gap:.75rem; 
-  }
-}
 @media(max-width:480px){
   .numbers-strip{ 
     grid-template-columns:1fr; 
-    gap:.5rem; 
+    gap:.75rem; 
   }
 }
 
@@ -249,14 +243,29 @@ a{color:inherit;text-decoration:none;}
   background:rgba(45,212,191,.06);
   border:1px solid rgba(45,212,191,.2);
   border-radius:1rem;
-  padding:1.75rem 1rem 1.5rem;
+  padding:1.5rem 1.25rem 1.25rem;
   position:relative;
   transition:all .3s var(--ease);
   overflow:hidden;
-  min-height:120px;
   display:flex;
   flex-direction:column;
+  align-items:center;
   justify-content:center;
+  gap:.6rem;
+}
+
+/* Arrow-type cells span both columns */
+.num-cell.is-arrow{
+  grid-column: span 2;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+  gap:0;
+  padding:1.25rem 1.5rem;
+}
+
+@media(max-width:480px){
+  .num-cell.is-arrow{ grid-column:span 1; flex-direction:column; gap:.6rem; }
 }
 
 .num-cell::before{
@@ -273,7 +282,7 @@ a{color:inherit;text-decoration:none;}
 .num-cell:hover{
   background:rgba(45,212,191,.1);
   border-color:rgba(45,212,191,.35);
-  transform:translateY(-4px);
+  transform:translateY(-3px);
   box-shadow:0 12px 32px rgba(45,212,191,.15);
 }
 
@@ -281,47 +290,72 @@ a{color:inherit;text-decoration:none;}
   transform:scaleX(1);
 }
 
+/* Single-value layout */
 .num-val{
-  font-size:1.4rem;
+  font-size:1.8rem;
   font-weight:800;
   color:var(--heading);
-  line-height:1.1;
-  margin-bottom:1rem;
+  line-height:1;
   font-variant-numeric:tabular-nums;
-  letter-spacing:-.01em;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  letter-spacing:-.02em;
   text-align:center;
-  gap:.2rem;
-  min-height:3rem;
-  word-break:keep-all;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
 }
 
-@media(max-width:640px){
-  .num-val{
-    font-size:1.2rem;
-    min-height:2.5rem;
-  }
+/* Arrow layout: before/after columns */
+.num-before, .num-after{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:.3rem;
 }
-
-.num-val .num-part{
-  color:var(--heading);
+.num-from{
+  font-size:1.35rem;
+  font-weight:800;
+  color:var(--text);
+  font-variant-numeric:tabular-nums;
+  text-decoration:line-through;
+  text-decoration-color:rgba(45,212,191,.4);
+  text-decoration-thickness:2px;
 }
-
-.num-val .arrow{
+.num-to{
+  font-size:1.8rem;
+  font-weight:800;
+  color:var(--accent);
+  font-variant-numeric:tabular-nums;
+  letter-spacing:-.02em;
+  line-height:1;
+}
+.num-sublabel{
+  font-size:.68rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:var(--text);
+  opacity:.6;
+}
+.num-arrow-icon{
+  font-size:1.4rem;
   color:var(--accent);
   font-weight:700;
-  font-size:.9em;
-  margin:0 .1rem;
+  padding:0 .75rem;
   flex-shrink:0;
+  opacity:.7;
+}
+.num-arrow-label{
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--text2);
+  text-align:center;
+  line-height:1.4;
+  margin-left:.75rem;
+  border-left:1px solid rgba(45,212,191,.25);
+  padding-left:.75rem;
+  max-width:90px;
 }
 
 .num-label1{
-  font-size:.85rem;
+  font-size:.8rem;
   font-weight:600;
   color:var(--text2);
   line-height:1.4;
@@ -333,14 +367,18 @@ a{color:inherit;text-decoration:none;}
   background:rgba(13,148,136,.06);
   border-color:rgba(13,148,136,.2);
 }
-
 [data-theme="light"] .num-cell:hover{
   background:rgba(13,148,136,.1);
   border-color:rgba(13,148,136,.35);
 }
-
 [data-theme="light"] .num-cell::before{
   background:linear-gradient(90deg, #0d9488, rgba(13,148,136,.4));
+}
+[data-theme="light"] .num-from{
+  color:var(--text);
+}
+[data-theme="light"] .num-to{
+  color:var(--accent);
 }
 
 /* ── Experience desc as list ── */
@@ -836,12 +874,33 @@ function renderAll() {
 
   // ── Numbers ──
   document.getElementById('numbersHead').textContent = t('關鍵數字', 'Numbers');
-  document.getElementById('numbersStrip').innerHTML = d.numbers.map(n => `
-    <div class="num-cell">
-      <div class="num-val">${formatNumberValue(n.value)}</div>
-      <div class="num-label1">${t(n.labelZh || '', n.labelEn || '')}</div>
-    </div>
-  `).join('');
+  document.getElementById('numbersStrip').innerHTML = d.numbers.map(n => {
+    const label = t(n.labelZh || '', n.labelEn || '');
+    const val = n.value || '';
+    // Detect arrow pattern: "X→Y" or "X → Y"
+    const arrowMatch = val.match(/^(.+?)\s*→\s*(.+)$/);
+    if (arrowMatch) {
+      const [, from, to] = arrowMatch;
+      return `
+        <div class="num-cell is-arrow">
+          <div class="num-before">
+            <div class="num-from">${from}</div>
+            <div class="num-sublabel">${t('之前','Before')}</div>
+          </div>
+          <div class="num-arrow-icon">→</div>
+          <div class="num-after">
+            <div class="num-to">${to}</div>
+            <div class="num-sublabel">${t('之後','After')}</div>
+          </div>
+          <div class="num-arrow-label">${label}</div>
+        </div>`;
+    }
+    return `
+      <div class="num-cell">
+        <div class="num-val">${val}</div>
+        <div class="num-label1">${label}</div>
+      </div>`;
+  }).join('');
 
   // ── Experience ──
   document.getElementById('expHead').textContent = t('工作經歷', 'Experience');

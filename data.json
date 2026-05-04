@@ -1,15 +1,15 @@
 {
   "meta": {
-    "titleZh": "李柏億 — 數位行銷",
-    "titleEn": "Boyi Lee — Digital Marketing",
+    "titleZh": "李柏億 — 資深數位行銷",
+    "titleEn": "Boyi Lee — Sr. Digital Marketing",
     "descriptionZh": "10年數位行銷經歷橫跨成效型電商行銷、MarTech與數據整合。",
     "descriptionEn": "10 years of experience in digital marketing, spanning performance e-commerce, MarTech, and data integration"
   },
   "profile": {
     "nameZh": "李柏億",
     "nameEn": "Boyi Lee",
-    "titleZh": "數位行銷",
-    "titleEn": "Digital Marketing",
+    "titleZh": "Sr. Digital Marketing",
+    "titleEn": "Sr. Digital Marketing",
     "taglineZh": "市場洞察分析到營收成長",
     "taglineEn": "Driving Revenue Growth through Market Insights",
     "photo": "photo.webp",
@@ -34,12 +34,12 @@
   ],
   "about": {
     "paragraphsZh": [
-      "10 年橫跨電商行銷、參與與協作 MarTech 產品與數據整合。擅長從市場洞察反推商品策略，曾協助電商月營收從 1800 萬成長至 5000 萬；也能以 PM 角色推動SaaS疊代與數據資產商品化",
-      "行銷決策有數據支撐，讓數據產品有市場落地。做的不只是數位行銷，更喜歡觀察與發現市場缺口、反推商品策略、帶動整體營收的全通路操盤。"
+      "10 年資歷橫跨電商成效行銷、MarTech 產品開發與數據整合。擅長從市場洞察反推商品策略，主導電商月營收於 3 年內從 NT$1,800 萬規模化至 NT$5,000 萬；同時具備 PM 視角，推動 SaaS 平台功能疊代與數據資產商品化落地。",
+      "習慣讓數據說話，也懂得讓數據產品找到市場。不只執行數位行銷，更專注於發現市場缺口、建立可複製的成長飛輪，並以全通路操盤思維帶動整體營收躍升。"
     ],
     "paragraphsEn": [
-      "10 year veteran spanning E-commerce, MarTech, and data integration. Expert in reverse-engineering product strategies from market insights, with a proven track record of scaling monthly revenue from NT$18M to NT$50M. Experienced in driving SaaS iterations and data asset commercialization in a PM capacity",
-      "I drive marketing decisions with data and bridge the gap between data products and market implementation. Beyond digital marketing, I specialize in identifying market gaps, reverse-engineering product strategies, and orchestrating omni-channel operations to drive holistic revenue growth"
+      "10-year track record spanning performance e-commerce, MarTech product development, and data integration. Proven ability to reverse-engineer product strategies from market insights — scaling monthly revenue from NT$18M to NT$50M within 3 years. Also experienced in a PM capacity, driving SaaS feature roadmaps and commercializing data assets.",
+      "I make data talk and make data products land. Beyond executing digital marketing, I focus on identifying market gaps, building repeatable growth engines, and orchestrating omni-channel operations that compound into sustained revenue growth."
     ]
   },
   "numbers": [
@@ -50,9 +50,9 @@
       "barWidth": 100
     },
     {
-      "value": "5x",
-      "labelZh": "廣告 ROAS 提升",
-      "labelEn": "ROAS Improvement",
+      "value": "5x ROAS",
+      "labelZh": "投放金額 1,000萬/月（FMCG）",
+      "labelEn": "NT$10M/mo Ad Spend (FMCG)",
       "barWidth": 80
     },
     {
@@ -86,12 +86,12 @@
       "datetime": "2024-01",
       "periodZh": "2024 — 2025",
       "periodEn": "2024 — 2025",
-      "companyZh": "禾多移動多媒體",
-      "companyEn": "AviviD",
+      "companyZh": "禾多移動多媒體（重回）",
+      "companyEn": "AviviD (Rejoined)",
       "roleZh": "廣告技術優化經理",
       "roleEn": "Ad Tech Optimization Manager",
-      "descZh": "- 主導 SaaS 數據平台的功能開發藍圖 (Roadmap)，整合多元數據模組以優化數據處理精度，大幅提升產品在複雜場景下的分析準確度。\n\n- 領導 BI 報表系統開發，為國際 4A 廣告代理商提供客製化數據視覺化方案與深度洞察，直接驅動其投放策略優化與績效達成。\n\n- 帶領 5 人專案團隊（包含業務開發與廣告投手），負責每月約 500 萬台幣之廣告投放預算分配，確保達成高標準的客戶投資報酬率 (ROI)。\n\n- 建立「投放實務 → 數據反饋 → 產品疊代」的閉環系統，將市場第一線投放數據轉化為產品優化建議，顯著強化廣告工具的市場競爭力與商業價值。",
-      "descEn": "- Spearheaded the feature roadmap for a SaaS data platform, integrating multi-source data modules to enhance platform precision and analytical capabilities for complex datasets.\n\n- Led the development of Business Intelligence (BI) dashboards tailored for 4A advertising agencies, providing actionable insights that directly optimized large-scale media buying strategies.\n\n- Managed a cross-functional team of 5 (Account Executives and Media Buyers), overseeing a monthly advertising spend of NT$5M while maintaining peak campaign performance and client ROI.\n\n- Established a \"Delivery-Data-Iteration\" closed-loop system, effectively translating frontline media buying data into product enhancement strategies to maximize the commercial utility of ad-tech tools.",
+      "descZh": "- 主導 SaaS 數據平台功能藍圖 (Roadmap)，整合多元數據模組提升分析精度，強化產品在複雜投放場景下的競爭力。\n\n- 領導 BI 報表系統開發，為國際 4A 廣告代理商提供客製化數據視覺化方案，直接驅動投放策略優化。\n\n- 帶領 5 人跨職能團隊（業務開發與廣告投手），管理每月約 NT$500 萬廣告預算，直接向 CEO 匯報。\n\n- 建立「投放實務 → 數據反饋 → 產品疊代」閉環系統，將第一線投放數據轉化為產品優化建議，顯著強化廣告工具商業價值。",
+      "descEn": "- Spearheaded the SaaS data platform feature roadmap, integrating multi-source data modules to enhance analytical precision and product competitiveness in complex campaign scenarios.\n\n- Led BI dashboard development for international 4A agencies, delivering customized data visualization solutions that directly optimized large-scale media buying strategies.\n\n- Managed a cross-functional team of 5 (AEs and Media Buyers), overseeing NT$5M monthly ad spend. Reported directly to CEO.\n\n- Established a Delivery→Data→Iteration closed-loop system, translating frontline campaign data into product enhancements to maximize ad-tech commercial value.",
       "highlight": null,
       "featured": false
     },
@@ -127,7 +127,7 @@
       "periodEn": "2021 — 2022",
       "companyZh": "禾多移動多媒體",
       "companyEn": "AviviD",
-      "roleZh": "行銷經理",
+      "roleZh": "行銷經理（首次加入）",
       "roleEn": "Marketing Manager",
       "descZh": "- 規劃 AI 商品推薦引擎，透過深度客戶訪談與市場研究定義產品需求，並有效推動產品功能的持續疊代與優化。\n\n- 策劃品牌行銷與廣告投放專案，在極大化品牌市場能見度的同時，確保潛在客戶 (Lead) 轉換流程的精準度與效率。\n\n- 負責品牌公關與媒體關係管理，透過撰寫專業新聞稿與維繫媒體渠道，成功擴大品牌曝光量並爭取高品質媒體報導。",
       "descEn": "- Conceptualized and led the development of an AI-powered product recommendation engine, conducting in-depth customer interviews to identify pain points and drive product iterations.\n\n- Orchestrated brand advertising campaigns to amplify market presence while optimizing the efficiency of lead generation and conversion funnels.\n\n- Managed public relations (PR) and media strategy, including press release distribution and relationship management, to secure extensive earned media coverage and brand exposure.",
@@ -196,8 +196,17 @@
       ]
     },
     {
-      "titleZh": "MarTech & AI",
-      "titleEn": "MarTech & AI",
+      "titleZh": "Data Science & Modeling",
+      "titleEn": "Data Science & Modeling",
+      "tags": [
+        "Marketing Mix Modeling",
+        "貝氏統計建模",
+        "多媒體歸因分析"
+      ]
+    },
+    {
+      "titleZh": "MarTech & AI Products",
+      "titleEn": "MarTech & AI Products",
       "tags": [
         "CDP 整合",
         "會員分群",

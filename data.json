@@ -249,6 +249,18 @@
       "labelEn": "Volunteering"
     }
   ],
+  "education": [
+    {
+      "schoolZh": "陸軍高中",
+      "schoolEn": "Army Senior High School",
+      "periodZh": "2002 年 9 月 — 2004 年 9 月",
+      "periodEn": "Sep 2002 — Sep 2004",
+      "majorZh": "建築科",
+      "majorEn": "Architecture",
+      "descZh": "修習建築設計、結構圖繪製與工程製圖等課程，培養邏輯思維與結構性分析能力。",
+      "descEn": "Studied architectural design, structural drafting, and engineering drawing — building a foundation in logical thinking and systematic planning."
+    }
+  ],
   "sideProjects": [
     {
       "labelZh": "星命師（古典占星 Chatbot）",

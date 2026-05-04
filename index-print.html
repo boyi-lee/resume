@@ -510,6 +510,12 @@ time.tl-period{
 [data-theme="light"] .tag{border-color:rgba(13,148,136,.25);}
 .tag:hover{background:rgba(45,212,191,.25);}
 
+/* ── Education ── */
+.edu-item { margin-bottom: .5rem; }
+.edu-school { font-size: .8rem; font-weight: 700; color: var(--text2); }
+.edu-period { font-size: .7rem; color: var(--text); opacity: .7; margin-bottom: .2rem; }
+.edu-desc { font-size: .75rem; color: var(--text); line-height: 1.55; opacity: .8; }
+
 /* ── Footer ── */
 .footer{
   margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--border);
@@ -532,229 +538,24 @@ time.tl-period{
 
 /* ── Print styles ── */
 @media print {
-  @page { size: A4 portrait; margin: 1.2cm 1.4cm; }
-
-  /* ── Reset ── */
-  *, *::before, *::after {
-    animation: none !important;
-    transition: none !important;
-    box-shadow: none !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-
-  /* ── Hide UI chrome ── */
-  .top-controls, .spotlight, .cta, .nav,
-  .photo-ring { display: none !important; }
-
-  /* ── Body ── */
-  body {
-    background: #fff !important;
-    color: #0f172a !important;
-    font-size: 9.5pt;
-    line-height: 1.6;
-  }
-
-  /* ── Layout: sidebar on top, content below ── */
-  .container {
-    display: block !important;
-    max-width: 100%;
-    padding: 0;
-  }
-
-  /* ── Sidebar: compact horizontal header ── */
+  .top-controls,
+  .spotlight,
+  .cta,
+  .nav { display: none !important; }
+  body { background: #fff; color: #0f172a; }
+  .container { display: block; max-width: 100%; padding: 0; }
   .sidebar {
-    position: static !important;
-    height: auto !important;
-    overflow: visible !important;
-    padding: 0 0 1rem 0;
-    display: grid !important;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto;
-    column-gap: 1.2rem;
-    border-bottom: 2px solid #0d9488;
-    margin-bottom: 1.2rem;
-    page-break-inside: avoid;
-    break-inside: avoid;
+    position: static;
+    height: auto;
+    padding: 2rem 2rem 1rem;
+    display: block;
   }
-
-  /* photo left, name/title/tagline right */
-  .photo-wrap {
-    grid-column: 1;
-    grid-row: 1 / 3;
-    width: 64px !important;
-    height: 64px !important;
-    align-self: center;
-  }
-  .photo-clip {
-    width: 64px !important;
-    height: 64px !important;
-  }
-  .photo-wrap img {
-    filter: grayscale(100%) !important;
-  }
-
-  .name {
-    grid-column: 2; grid-row: 1;
-    font-size: 16pt !important;
-    color: #0f172a !important;
-    margin-bottom: .1rem;
-    align-self: end;
-  }
-  .title {
-    font-size: 9pt !important;
-    color: #0d9488 !important;
-    margin-bottom: 0;
-  }
-  .tagline {
-    font-size: 8pt !important;
-    color: #475569 !important;
-    max-width: 100%;
-  }
-
-  /* contact + interests: inline row */
-  .contact, .interests-block {
-    grid-column: 2;
-    display: inline !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    border: none !important;
-  }
-  .contact-list {
-    display: flex !important;
-    flex-wrap: wrap;
-    gap: .2rem 1rem;
-    list-style: none !important;
-    padding: 0 !important;
-    margin: .3rem 0 0 0 !important;
-  }
-  .contact-list li, .contact-list a {
-    font-size: 7.5pt !important;
-    color: #475569 !important;
-  }
-  .interests-block { display: none !important; }
-
-  /* ── Content ── */
-  .content {
-    padding: 0 !important;
-    max-width: 100% !important;
-  }
-
-  /* ── Section head (mobile) ── */
-  .section-head { display: none !important; }
-
-  /* ── Section spacing ── */
-  .section {
-    margin-bottom: 1.2rem !important;
-    scroll-margin: 0 !important;
-  }
-
-  /* ── About text ── */
-  .about-text {
-    font-size: 9pt !important;
-    color: #334155 !important;
-    line-height: 1.6;
-  }
-  .about-text p { margin-bottom: .5rem !important; }
-
-  /* ── Numbers strip ── */
-  .numbers-strip {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: .5rem !important;
-    margin: .75rem 0 !important;
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-  .num-cell {
-    opacity: 1 !important;
-    background: rgba(13,148,136,.06) !important;
-    border: 1px solid rgba(13,148,136,.25) !important;
-    border-radius: .5rem !important;
-    padding: .75rem !important;
-    min-height: 0 !important;
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-  .num-cell.is-arrow {
-    grid-column: span 2 !important;
-    flex-direction: row !important;
-  }
-  .num-to, .num-single, .num-val, .ba-single {
-    font-size: 13pt !important;
-    color: #0d9488 !important;
-  }
-  .num-from { font-size: 9pt !important; color: #64748b !important; }
-  .num-before, .num-after { gap: .1rem !important; }
-  .num-arrow-icon { font-size: 11pt !important; color: #0d9488 !important; }
-  .num-label1, .num-arrow-label, .num-sublabel {
-    font-size: 7.5pt !important;
-    color: #475569 !important;
-  }
-  .num-arrow-label {
-    border-left: 1px solid rgba(13,148,136,.3) !important;
-    max-width: 70px !important;
-  }
-
-  /* ── Timeline ── */
-  .timeline {
-    padding-left: 1rem !important;
-  }
-  .timeline::before {
-    background: #cbd5e1 !important;
-  }
-  .tl-item {
-    margin-bottom: 1rem !important;
-    padding: .5rem .5rem .5rem 0 !important;
-    border: none !important;
-    background: none !important;
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-  .tl-item.dimmed { opacity: 1 !important; }
-  .tl-dot { border-color: #0d9488 !important; background: #0d9488 !important; }
-  .tl-period { font-size: 7pt !important; color: #64748b !important; }
-  .tl-title { font-size: 9.5pt !important; color: #0f172a !important; }
-  .tl-company { color: #0d9488 !important; }
-  .tl-desc, .tl-desc-list {
-    font-size: 8.5pt !important;
-    color: #334155 !important;
-    line-height: 1.55;
-  }
-  .tl-desc-list li { margin-bottom: .3rem !important; }
-  .tl-desc-list li::before { color: #0d9488 !important; }
-  .tl-highlight {
-    background: rgba(13,148,136,.06) !important;
-    border: 1px solid rgba(13,148,136,.2) !important;
-    font-size: 8pt !important;
-    padding: .5rem .75rem !important;
-  }
-
-  /* ── Skills ── */
-  .skill-groups {
-    grid-template-columns: 1fr 1fr !important;
-    gap: .75rem !important;
-    margin-top: .75rem !important;
-  }
-  .skill-group-title {
-    font-size: 7.5pt !important;
-    color: #0f172a !important;
-    margin-bottom: .3rem !important;
-  }
-  .tags { gap: .2rem !important; }
-  .tag {
-    font-size: 7pt !important;
-    padding: .15rem .5rem !important;
-    background: rgba(13,148,136,.08) !important;
-    border: 1px solid rgba(13,148,136,.2) !important;
-    color: #0d9488 !important;
-  }
-
-  /* ── Footer ── */
-  .footer { display: none !important; }
-
-  /* ── Teal accent color for headings ── */
-  .section-head { display: none !important; }
-  .block-label { color: #0f172a !important; font-size: 7.5pt !important; }
+  .content { padding: 1rem 2rem; max-width: 100%; }
+  .section { margin-bottom: 2rem; page-break-inside: avoid; }
+  .tl-item { page-break-inside: avoid; }
+  .about-text, .tl-desc, .num-label, .contact-list { color: #334155; }
+  .name, .tl-title, .heading { color: #0f172a; }
+  * { animation: none !important; transition: none !important; box-shadow: none !important; }
 }
 </style>
 </head>
@@ -802,6 +603,11 @@ time.tl-period{
     <div class="interests-block">
       <div class="block-label" id="projectsLabel">興趣延伸 AI 實作</div>
       <div id="projectsList"></div>
+    </div>
+
+    <div class="interests-block" id="educationBlock">
+      <div class="block-label" id="educationLabel">學歷</div>
+      <div id="educationList"></div>
     </div>
 
     <a href="#" class="cta" id="ctaBtn">
@@ -1106,6 +912,20 @@ function renderAll() {
     <a href="${p.href}" target="_blank" rel="noopener" class="ai-link">🔗 ${t(p.labelZh, p.labelEn)}</a>
   `).join('');
 
+  // ── Education ──
+  if (d.education && d.education.length > 0) {
+    document.getElementById('educationLabel').textContent = t('學歷', 'Education');
+    document.getElementById('educationList').innerHTML = d.education.map(e => `
+      <div class="edu-item">
+        <div class="edu-school">${t(e.schoolZh, e.schoolEn)} · ${t(e.majorZh, e.majorEn)}</div>
+        <div class="edu-period">${t(e.periodZh, e.periodEn)}</div>
+        <div class="edu-desc">${t(e.descZh, e.descEn)}</div>
+      </div>
+    `).join('');
+  } else {
+    document.getElementById('educationBlock').style.display = 'none';
+  }
+
   // ── CTA ──
   document.getElementById('ctaLabel').textContent = t('下載履歷 PDF', 'Download Resume PDF');
 
@@ -1256,11 +1076,6 @@ function toggleLang() {
 }
 
 loadData();
-
-// Auto-print after data + fonts are ready
-document.fonts.ready.then(() => {
-  setTimeout(() => window.print(), 800);
-});
 </script>
 </body>
 </html>

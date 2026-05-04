@@ -510,6 +510,12 @@ time.tl-period{
 [data-theme="light"] .tag{border-color:rgba(13,148,136,.25);}
 .tag:hover{background:rgba(45,212,191,.25);}
 
+/* ── Education ── */
+.edu-item { margin-bottom: .5rem; }
+.edu-school { font-size: .8rem; font-weight: 700; color: var(--text2); }
+.edu-period { font-size: .7rem; color: var(--text); opacity: .7; margin-bottom: .2rem; }
+.edu-desc { font-size: .75rem; color: var(--text); line-height: 1.55; opacity: .8; }
+
 /* ── Footer ── */
 .footer{
   margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--border);
@@ -597,6 +603,11 @@ time.tl-period{
     <div class="interests-block">
       <div class="block-label" id="projectsLabel">興趣延伸 AI 實作</div>
       <div id="projectsList"></div>
+    </div>
+
+    <div class="interests-block" id="educationBlock">
+      <div class="block-label" id="educationLabel">學歷</div>
+      <div id="educationList"></div>
     </div>
 
     <a href="#" class="cta" id="ctaBtn">
@@ -900,6 +911,20 @@ function renderAll() {
   document.getElementById('projectsList').innerHTML = d.sideProjects.map(p => `
     <a href="${p.href}" target="_blank" rel="noopener" class="ai-link">🔗 ${t(p.labelZh, p.labelEn)}</a>
   `).join('');
+
+  // ── Education ──
+  if (d.education && d.education.length > 0) {
+    document.getElementById('educationLabel').textContent = t('學歷', 'Education');
+    document.getElementById('educationList').innerHTML = d.education.map(e => `
+      <div class="edu-item">
+        <div class="edu-school">${t(e.schoolZh, e.schoolEn)} · ${t(e.majorZh, e.majorEn)}</div>
+        <div class="edu-period">${t(e.periodZh, e.periodEn)}</div>
+        <div class="edu-desc">${t(e.descZh, e.descEn)}</div>
+      </div>
+    `).join('');
+  } else {
+    document.getElementById('educationBlock').style.display = 'none';
+  }
 
   // ── CTA ──
   document.getElementById('ctaLabel').textContent = t('下載履歷 PDF', 'Download Resume PDF');

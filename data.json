@@ -1,6 +1,6 @@
 {
   "meta": {
-    "titleZh": "李柏億 Boyi Lee — 數位行銷",
+    "titleZh": "李柏億 — 數位行銷",
     "titleEn": "Boyi Lee — Digital Marketing",
     "descriptionZh": "10年數位行銷經歷橫跨成效型電商行銷、MarTech與數據整合。",
     "descriptionEn": "10 years of experience in digital marketing, spanning performance e-commerce, MarTech, and data integration"
@@ -70,7 +70,7 @@
   ],
   "experience": [
     {
-      "datetime": "2025-04",
+      "datetime": "2024-01",
       "periodZh": "2025 年 4 月 — 8 月",
       "periodEn": "Apr — Aug 2025",
       "companyZh": "凱旭證券投顧",
@@ -96,7 +96,7 @@
       "featured": false
     },
     {
-      "datetime": "2023-01",
+      "datetime": "2024-01",
       "periodZh": "2023 — 2024",
       "periodEn": "2023 — 2024",
       "companyZh": "紅門互動",
@@ -109,7 +109,7 @@
       "featured": false
     },
     {
-      "datetime": "2022-01",
+      "datetime": "2024-01",
       "periodZh": "2022 — 2023",
       "periodEn": "2022 — 2023",
       "companyZh": "世代傳媒",
@@ -122,7 +122,7 @@
       "featured": false
     },
     {
-      "datetime": "2021-01",
+      "datetime": "2024-01",
       "periodZh": "2021 — 2022",
       "periodEn": "2021 — 2022",
       "companyZh": "禾多移動多媒體",
@@ -135,7 +135,7 @@
       "featured": false
     },
     {
-      "datetime": "2018-01",
+      "datetime": "2024-01",
       "periodZh": "2018 — 2021",
       "periodEn": "2018 — 2021",
       "companyZh": "愛上新鮮",
@@ -144,29 +144,24 @@
       "roleEn": "Marketing Manager",
       "descZh": "- 負責官網行銷成長策略與優化專案，成功驅動月營收由 NT$1,800 萬規模化增長至 NT$5,000 萬。\n\n- 帶領 10 人跨職能團隊執行多渠道廣告投放策略 (Facebook / Google)，透過精準投放與數據優化將整體 ROAS 提升至 5 以上。\n\n- 建立會員分群與精準再行銷體系，有效提升顧客回購率與會員生命週期價值。\n\n- 統籌大型促銷活動與內容行銷矩陣，強化品牌市場佔有率與社群影響力，確立品牌市場領導地位。",
       "descEn": "- Spearheaded official website growth and optimization initiatives, successfully scaling monthly revenue from NT$18M to NT$50M.\n\n- Led a 10-member cross-functional team in executing multi-channel performance marketing (FB/Google), optimizing ad spend to achieve a ROAS exceeding 5x.\n\n- Established sophisticated customer segmentation and retargeting frameworks, significantly boosting customer retention rates and Lifetime Value (LTV).\n\n- Orchestrated integrated promotional campaigns and content strategies to strengthen brand positioning and expand market share.",
-      "highlight": {
-        "labelZh": "核心決策：",
-        "labelEn": "Decision story:",
-        "textZh": "- 透過數據分析洞察運動族群對生鮮食品的潛在需求缺口，據此精準調整商品策略，將行銷資源集中投入 DGI (低 GI) 飲食產品。\n\n\n\n- 策劃並執行「素人減重挑戰」社群活動，藉由真實見證建立品牌公信力，成功實現月營收從 1,800 萬至 5,000 萬 的規模化成長。",
-        "textEn": "- Identified a latent market gap for fresh food among the fitness demographic through data analytics, strategically reallocating marketing resources to prioritize DGI (Low-Glycemic Index) product lines.\n\n- Orchestrated a \"Real-life Weight Loss Challenge\" campaign to build brand social proof and authority, successfully scaling monthly revenue from NT$18M to NT$50M."
-      },
+      "highlight": null,
       "featured": true
     },
     {
-      "datetime": "2016-01",
+      "datetime": "2024-01",
       "periodZh": "2016 — 2017",
       "periodEn": "2016 — 2017",
       "companyZh": "聖洋科技",
       "companyEn": "CacaFly",
       "roleZh": "廣告 AM/AE",
       "roleEn": "Ad AM/AE",
-      "descZh": "操作 Facebook／Google 廣告投放，設計跨產業廣告策略。管理月預算約 300 萬元，成功拓展新客戶並提升轉換率。投放結構：70% 成效轉換、20% 品牌曝光、10% 影片互動。",
-      "descEn": "Managed Facebook and Google ad campaigns across industries. Handled ~NT$3M monthly budget, acquired new clients and improved CVR. Campaign mix: 70% performance, 20% brand awareness, 10% video engagement.",
+      "descZh": "- 操作 Facebook／Google 廣告投放，設計跨產業廣告策略\n- 管理月預算約 300 萬元，成功拓展新客戶並提升轉換率\n- 投放結構：70% 成效轉換、20% 品牌曝光、10% 影片互動",
+      "descEn": "- Spearheaded cross-industry advertising strategies on Facebook and Google Ads to maximize campaign reach and relevance.\n\n- Directed a NT$3M monthly ad spend, consistently expanding client base and optimizing conversion efficiency.\n\n- Orchestrated a full-funnel media mix comprising 70% performance-driven conversions, 20% brand exposure, and 10% video engagement.",
       "highlight": null,
       "featured": false
     },
     {
-      "datetime": "2014-01",
+      "datetime": "2024-01",
       "periodZh": "2014 — 2015",
       "periodEn": "2014 — 2015",
       "companyZh": "台灣電子商務",
